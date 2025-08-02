@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" type="image/x-icon" href="/image/chat.png">
+<link rel="shortcut icon" type="image/x-icon" href="/image/chat3.png">
 
 <link rel="stylesheet" href="/css/index.css">
 
@@ -201,8 +201,10 @@
 
     .topo:before {
         content: '';
-        background-image: url(/image/pattern.png);
-        background-repeat: repeat;
+        background-image: url(/image/pattern1.png);
+        background-size: cover; /* 或 contain，视需求选择 */
+        background-position: center; /* 图片居中 */
+        background-repeat: no-repeat; /* 禁止重复 */
         height: 100%;
         left: 0;
         position: absolute;
@@ -213,15 +215,18 @@
 
     .sidebar ul {
         width: 100%;
-        margin-top: 50px
+        margin-top: 30px;
+        padding: 0; /* 确保无内边距 */
+        list-style: none; /* 保持无列表标记 */
     }
 
     .sidebar ul li {
         height: 50px;
         list-style: none;
         font-size: 1.2em;
-        text-align: right;
-        margin-right: 10px
+        text-align: left; /* 改为左对齐 */
+        margin: 0; /* 移除右边距 */
+        padding-left: 15px; /* 可选：添加少量左内边距以避免文字紧贴边缘 */
     }
 
     .sidebar ul li a {
