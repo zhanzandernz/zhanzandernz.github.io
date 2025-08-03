@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+<title>纽西兰公路奇遇-Alpha</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/chat3.png">
+
+<link rel="stylesheet" href="/css/index.css">
+
+
+
+<meta name="keywords" content="生活记录,时间顺序,">
+<meta name="description" content="现代化与传统交织的交通网络">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+<script src="/js/fancybox.umd.js"></script>
+
+
+<script src="/js/fancybox-images.js"></script>
+
+
+<script src="/js/gitalk.min.js"></script>
+
+
+<script src="/js/hljs.min.js"></script>
+ 
+<script>hljs.highlightAll();</script>
+
+	<meta name="generator" content="Hexo 7.3.0"></head>
+
+	<body>
+		
+	<div class="header">
+		<div class="header-top" id="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										首页
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										时间轴
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										分类
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										标签
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/links">
+										友链
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										关于
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>Zander Zhan</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <a href="/archives">时间轴</a>
+        </li>
+        
+        <li>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <a href="/links">友链</a>
+        </li>
+        
+        <li>
+            <a href="/about">关于</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/zhanzandernz">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'>
+</div>
+<style>
+    .shelter{
+        background-color: #333;
+        opacity:0.5;
+        cursor: pointer;
+        display: none; 
+        position: fixed;
+        left: 0;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        z-index: 1998;
+    }
+    .sidebar {
+        width: 66%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background: #fff;
+        z-index: 1999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern1.png);
+        background-size: cover; /* 或 contain，视需求选择 */
+        background-position: center; /* 图片居中 */
+        background-repeat: no-repeat; /* 禁止重复 */
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0; /* 确保无内边距 */
+        list-style: none; /* 保持无列表标记 */
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: left; /* 改为左对齐 */
+        margin: 0; /* 移除右边距 */
+        padding-left: 15px; /* 可选：添加少量左内边距以避免文字紧贴边缘 */
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $( function () {
+	$( '.h-right-close>svg' )
+		.click( function () {
+			$( '.sidebar' )
+				.animate( {
+					right: "0"
+				}, 500 );
+			$( '.shelter' )
+				.fadeIn( "slow" )
+		} );
+	$( '.shelter' )
+		.click( function ( e ) {
+			$( '.sidebar' )
+				.animate( {
+					right: "-100%"
+				}, 500 );
+			$( '.shelter' )
+				.fadeOut( "slow" )
+		} )
+} )
+
+</script>
+
+<div class="post">
+    <div class="post-header-background post-header-img"
+    style="background: url('https://api.ixiaowai.cn/gqapi/gqapi.php')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/生活记录">生活记录</a></li>
+            
+            <li><a href="/tags/时间顺序">时间顺序</a></li>
+            
+            
+        </ul>
+        
+        <h1>纽西兰公路奇遇</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg t="1604839279282" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="2901" width="20" height="20">
+                        <path
+                            d="M513 956.3c-247.7 0-448-200.3-448-448S265.3 66.2 513 66.2s448 200.3 448 448-200.3 442.1-448 442.1z m0-830.9c-212.2 0-388.8 170.7-388.8 388.8C124.2 726.3 294.9 903 513 903c212.2 0 388.8-170.7 388.8-388.8S725.2 125.4 513 125.4z m0 430.2c-94.2 0-170.7-76.5-170.7-170.7S418.8 207.8 513 207.8s170.7 76.5 170.7 170.7S607.2 555.6 513 555.6z m0-289.1c-64.6 0-112 52.8-112 112s47.4 117.9 112 117.9 112-52.8 112-112-47.4-117.9-112-117.9z m0 689.8c-135.7 0-259-58.7-341.9-158.9l-11.8-17.8 11.8-17.8c76.5-117.9 206.2-188.5 347.8-188.5 135.7 0 265 64.6 341.9 182.6l11.8 17.8-11.8 17.8C778 897.1 648.7 956.3 513 956.3zM230.3 773.2C300.9 849.7 406.9 897 513 897c112 0 218.1-47.4 288.6-129.8-70.5-88.2-170.7-135.6-282.7-135.6s-218.1 53.3-288.6 141.6z"
+                            p-id="2902" fill="#000000"></path>
+                    </svg>
+                    
+                <span class="post-header-info-author-text"> <a target="_blank" rel="noopener" href="https://github.com/zhanzandernz">Zander Zhan</a></span>
+                <div class="post-header-info-author-categories">
+                    
+                         <a href="../../categories/生活记录/" target="_blank" >生活记录</a>
+                    
+                </div>
+                <p>2025-08-03 12:00:00</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
+
+    <p>踏入新西兰的土地，映入眼帘的便是路面两侧的大斜坡和深水沟，许久难以习惯的是左行的交通制度，无奈的是层铺法路面持续不断进入鞋内的石子。</p>
+<p>或许是从小做着“逢山开道，遇水架桥”的梦，亦或许源于母校多年的熏陶，使我对新环境中公路交通设施的差异十分敏感。</p>
+<p>回想这一年，就像进入了憨豆先生的电影，体会到了不同的交通生活方式</p>
+<style>.elqmluxqhhxe{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/1.jpg" class="elqmluxqhhxe" alt="1">
+
+<p>▲（1） 第一天到学校门口，就看到了比亚迪元的海外版。该车在国内的样貌平平，放到了海外都是二手丰田的市场，反倒有点高级。</p>
+<style>.gvfpcugyupwb{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/2.jpg" class="gvfpcugyupwb" alt="2">
+
+<p>▲（2）深夜大门被撬开了，此处应该是有小偷在踩点。几天过后，舍友挺在门口的丰田车被盗了。</p>
+<style>.dhwgvteohmgr{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/3.jpg" class="dhwgvteohmgr" alt="3">
+
+<p>▲（3）济南的公交是人民的私家车，国外的不知道是谁的。这里的公交不仅贵（学生卡一年车票翻了2.5倍），坐车跟考试一样紧张。</p>
+<style>.rdaruvhtuhoe{width: 70% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/555.jpg" class="rdaruvhtuhoe" alt="555">
+
+<p>▲（4）原装进口工程机械，可惜缺乏善用的人，干不出高效、高质量的工程。所以，机械设备是一方面，关键因素在于人。</p>
+<style>.vjjedgkvuswr{width: 60% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/49.jpg" class="vjjedgkvuswr" alt="49">
+
+<p>▲（5）爱我你就眨眨眼</p>
+<style>.pwxizxubrora{width: 70% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/11.jpg" class="pwxizxubrora" alt="11">
+
+<p>▲（6）这个车跟父亲的车很像，但又感觉陌生。以前的它是多么动力充沛强壮有力，经历了15年的风风雨雨，也渐渐褪去了光芒。</p>
+<style>.krhhdfnnqebq{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/27.jpg" class="krhhdfnnqebq" alt="27">
+
+<p>▲（7）电车及牌照的标杆</p>
+<style>.umpurfsvtaqb{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/20.jpg" class="umpurfsvtaqb" alt="20">
+
+<p>▲（8）没见过的意大利牌子好像</p>
+<style>.yykltpfmnlam{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/24.jpg" class="yykltpfmnlam" alt="24">
+
+<p>▲（8）9X的前灯估计是这样参考而来的吧</p>
+<style>.xkecvoemtvkl{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/26.jpg" class="xkecvoemtvkl" alt="26">
+
+<p>▲（9）国外也不是法外之地🤡</p>
+<style>.aoyjmxueunlb{width: 30% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/12.jpg" class="aoyjmxueunlb" alt="12">
+
+<p>▲（10）远看和帝豪一样。</p>
+<style>.ueriqrmngvsm{width: 60% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/hhh.jpg" class="ueriqrmngvsm" alt="hhh">
+
+<p>▲（11）老外也很准时，每次周六很大概率会在华城遇到它。想起来憨豆先生的快乐周末，为什么还要内耗呢？</p>
+<p>看遍了那么多好车、外观精致漂亮的车，心中却始终惦念着这一辆。</p>
+<style>.iksjgdqipviu{width: 60% !important; height: auto !important;}</style><img src="/2025/08/03/Vehicle/00179.jpg" class="iksjgdqipviu" alt="00179">
+
+<p>它或许不是底盘最先进的，也不是智驾技术最顶尖的，销量也远未达到拔尖。曾遭遇过无数质疑与非议，甚至被恶意攻击。可正是这辆车，始终守护着我一家人的平安，每当一天疲惫归来，停在眼前，它就像无声的慰藉，驱散内心的疲惫。</p>
+<p>初看时，它或许不会激起惊艳的目光，甚至显得平凡普通。但换个角度细细品味，便能感受到它独有的美丽——线条流畅，质感沉稳，散发着低调而持久的魅力。它任劳任怨，不畏激烈的驾驶风雨，始终为家人撑起一片安全的天空。</p>
+<p>这辆车的“食量”不大，耗费的电费极其节省，回报却是源源不断的动力和可靠。每一次发动，仿佛都注入了满满的能量，让行程充满信心。即便偶尔生病出现故障，它也总能坚强挺过，从未放弃过。</p>
+<p>作为人生的第一辆车，它不仅是一件代步工具，更像家庭的一员，承载着无数回忆与情感。正因如此，这辆车教会了珍惜与满足，教会了即使不完美，也要坚守自己的价值。</p>
+<p>正如一个人内心的写照：无需顶尖光环，不必极致完美，只要踏实守护，始终自信，便足以温暖所有时光。</p>
+
+  </div>
+  <div id=""></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+
+    
+    <a href="/2025/08/01/hello-world/">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>Hello World</p>
+        </div>
+    </a>
+    
+</div>
+</div>
+		
+<div class="footer">
+	<div class="Copyright">
+		©2025 By Zander Zhan.
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/zhanzandernz">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Dog">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            transition: border .5s;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $( '#js-go_top' )
+	.gotoTop( {
+		offset: 500,
+		speed: 300,
+		animationShow: {
+			'transform': 'translate(0,0)',
+			'transition': 'transform .5s ease-in-out'
+		},
+		animationHide: {
+			'transform': 'translate(100px,0)',
+			'transition': 'transform .5s ease-in-out'
+		}
+	} );
+</script>
+
+
+    <!-- Gitalk -->
+    <script>
+        const data = '{"clientID":"02b3c","clientSecret":"adfc7b4","repo":"gimment","owner":"duneng","admin":"duneng"}'
+        const gitalk = new Gitalk({
+            ...JSON.parse( data),
+            id:location.pathname,
+            distractionFreeMode:false
+        })
+        
+        if(Boolean('false')){
+            gitalk.render('gitalk-container')
+        }
+    </script>
+
+
+	</body>
+</html>
+
