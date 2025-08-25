@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+<title>人是一切问题的决定性因素-Alpha</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/chat3.png">
+
+<link rel="stylesheet" href="/css/index.css">
+
+
+
+<meta name="keywords" content="生活记录,">
+<meta name="description" content="平安留学 快乐成长">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+<script src="/js/fancybox.umd.js"></script>
+
+
+<script src="/js/fancybox-images.js"></script>
+
+
+<script src="/js/gitalk.min.js"></script>
+
+
+<script src="/js/hljs.min.js"></script>
+ 
+<script>hljs.highlightAll();</script>
+
+	<meta name="generator" content="Hexo 7.3.0"></head>
+
+	<body>
+		
+	<div class="header">
+		<div class="header-top" id="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										首页
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										时间轴
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										分类
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										标签
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/links">
+										友链
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										关于
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>Zander Zhan</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <a href="/archives">时间轴</a>
+        </li>
+        
+        <li>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <a href="/links">友链</a>
+        </li>
+        
+        <li>
+            <a href="/about">关于</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/zhanzandernz">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'>
+</div>
+<style>
+    .shelter{
+        background-color: #333;
+        opacity:0.5;
+        cursor: pointer;
+        display: none; 
+        position: fixed;
+        left: 0;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        z-index: 1998;
+    }
+    .sidebar {
+        width: 66%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background: #fff;
+        z-index: 1999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern1.png);
+        background-size: cover; /* 或 contain，视需求选择 */
+        background-position: center; /* 图片居中 */
+        background-repeat: no-repeat; /* 禁止重复 */
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0; /* 确保无内边距 */
+        list-style: none; /* 保持无列表标记 */
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: left; /* 改为左对齐 */
+        margin: 0; /* 移除右边距 */
+        padding-left: 15px; /* 可选：添加少量左内边距以避免文字紧贴边缘 */
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $( function () {
+	$( '.h-right-close>svg' )
+		.click( function () {
+			$( '.sidebar' )
+				.animate( {
+					right: "0"
+				}, 500 );
+			$( '.shelter' )
+				.fadeIn( "slow" )
+		} );
+	$( '.shelter' )
+		.click( function ( e ) {
+			$( '.sidebar' )
+				.animate( {
+					right: "-100%"
+				}, 500 );
+			$( '.shelter' )
+				.fadeOut( "slow" )
+		} )
+} )
+
+</script>
+
+<div class="post">
+    <div class="post-header-background post-header-img"
+    style="background: url('https://api.ixiaowai.cn/gqapi/gqapi.php')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/生活记录">生活记录</a></li>
+            
+            
+        </ul>
+        
+        <h1>人是一切问题的决定性因素</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg t="1604839279282" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="2901" width="20" height="20">
+                        <path
+                            d="M513 956.3c-247.7 0-448-200.3-448-448S265.3 66.2 513 66.2s448 200.3 448 448-200.3 442.1-448 442.1z m0-830.9c-212.2 0-388.8 170.7-388.8 388.8C124.2 726.3 294.9 903 513 903c212.2 0 388.8-170.7 388.8-388.8S725.2 125.4 513 125.4z m0 430.2c-94.2 0-170.7-76.5-170.7-170.7S418.8 207.8 513 207.8s170.7 76.5 170.7 170.7S607.2 555.6 513 555.6z m0-289.1c-64.6 0-112 52.8-112 112s47.4 117.9 112 117.9 112-52.8 112-112-47.4-117.9-112-117.9z m0 689.8c-135.7 0-259-58.7-341.9-158.9l-11.8-17.8 11.8-17.8c76.5-117.9 206.2-188.5 347.8-188.5 135.7 0 265 64.6 341.9 182.6l11.8 17.8-11.8 17.8C778 897.1 648.7 956.3 513 956.3zM230.3 773.2C300.9 849.7 406.9 897 513 897c112 0 218.1-47.4 288.6-129.8-70.5-88.2-170.7-135.6-282.7-135.6s-218.1 53.3-288.6 141.6z"
+                            p-id="2902" fill="#000000"></path>
+                    </svg>
+                    
+                <span class="post-header-info-author-text"> <a target="_blank" rel="noopener" href="https://github.com/zhanzandernz">Zander Zhan</a></span>
+                <div class="post-header-info-author-categories">
+                    
+                         <a href="../../categories/生活记录/" target="_blank" >生活记录</a>
+                    
+                </div>
+                <p>2025-08-24 21:04:22</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
+
+    <p>留学前，我曾纠结于一个问题：新西兰这样的国家，是否真的有留学价值？尽管是所谓的发达国家，但是个小国，且大学在QS排名上与本校差距并不大。我反复怀疑，这样的经历是否足够有意义。</p>
+<p>然而，真正来到这里之后，我的经历给了我新的答案。留学过程中，我有幸参与到领馆组织的活动，接触到来自各个领域的人物。<br>他们的经历和思考让我获益匪浅。更重要的是，这样的机会在新加坡、加拿大等地或许并不容易获得。归根结底，这并不是“地理”或“排名”的问题，而是背后“人”的因素——是不同领导者的管理方式，塑造了完全不同的氛围。</p>
+<p>归根结底，这是不同的领导者的不同的管理“艺术”。<br>一种是领导者懂得“聚人心”，分配任务清晰，奖罚分明，知人善用。一声号令下去，大家心往一处想，劲往一处使。</p>
+<p>另一种却是领导者依靠职位与话语权凌驾于人之上，导致成员出工不出力，“宁可不干也不犯错”，逐渐形成僵化的氛围。在这样的环境中，个人的积极性被消磨殆尽，利己主义反而成为最优解。</p>
+<style>.lbextitiyedp{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/1a2.jpg" class="lbextitiyedp" alt="1a2">
+
+<p>▲（1） 这篇的故事从这个电影开始，但从未设想过后续领馆组织的丰富的活动内容。</p>
+<style>.deurhinpjvql{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/3.jpg" class="deurhinpjvql" alt="3">
+
+<p>▲（2） 元旦新年的慰问活动。国外成长经历的孩子的临场发挥表现，语言流利、思路清晰，甚至还会调动全程气氛。</p>
+<style>.nqcrbcjzxyfb{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/4567.jpg" class="nqcrbcjzxyfb" alt="4567">
+
+<p>▲（3） 春节新年的领馆活动。形式对了，但人少了没了气氛。</p>
+<style>.cungyqsezrdp{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/10.jpg" class="cungyqsezrdp" alt="10">
+
+<p>▲（4） 春节新年的慰问活动。苏博士的经历强调了这篇博客的论点。</p>
+<style>.ghwtjoncplen{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/12.jpg" class="ghwtjoncplen" alt="12">
+
+<p>▲（5） 端午节的活动。只可惜这天正好耳鸣不止，没法充分发挥记住长相、职业、领域、经验的能力。</p>
+<style>.bthroejngbrq{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/891011.jpg" class="bthroejngbrq" alt="891011">
+
+<p>▲（6） 雪龙2号来了。移动的国土，对于我们，也相当于回家了。</p>
+<style>.xxfofkmrktfw{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/13.jpg" class="xxfofkmrktfw" alt="13">
+
+<p>▲（7） 领馆组织的南极主题的国际会议。师兄的汇报内容本找我帮忙，被我有事耽搁了。以后不能做这种“放鸽子”行为，对于人的信用、人情极大损失。</p>
+<style>.wjwpwuprgsvf{width: 80% !important; height: auto !important;}</style><img src="/2025/08/24/activitiesinnz/14.jpg" class="wjwpwuprgsvf" alt="14">
+
+<p>▲（8） 反法西斯战争胜利80周年。这个电影十分具有教育意义，选材恰到好处。回国倒计时3周，那么，故事也以电影的方式结束了。</p>
+<p>这让我深刻体素。会到：人，才是一切问题的决定性因<br>无论是国家治理、机构管理，还是小小的学习小组，人的选择、人的心态、人的管理方式，往往比外部条件更具决定性。</p>
+<p>对于我的职业选择而言，这同样是一种启示。所谓“良禽择木而栖”，在未来的职业道路上，我会更加看重身边的“人”。一个懂得激发团队潜力、善用人才的领导者，比起一份看似耀眼的职位，更值得追随。</p>
+<p>在日常生活中，这同样适用。无论是朋友、同学还是合作伙伴，人与人的关系，人与人的能量，才是推动事情发展的根本。工具重要，条件重要，但最终能否成事，取决于人。</p>
+<p>这段经历让我深刻意识到：平台是重要条件，而关键因素在于能否遇见那些让你思考、让你成长、让你被激励的人。</p>
+<p>最后，再次总结，这不正是马克思主义中唯武器论和唯意志论的辩证关系。</p>
+
+  </div>
+  <div id=""></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+
+    
+    <a href="/2025/08/09/moon/">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>月色如旧，人事已非</p>
+        </div>
+    </a>
+    
+</div>
+</div>
+		
+<div class="footer">
+	<div class="Copyright">
+		©2025 By Zander Zhan.
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/zhanzandernz">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Dog">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            transition: border .5s;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $( '#js-go_top' )
+	.gotoTop( {
+		offset: 500,
+		speed: 300,
+		animationShow: {
+			'transform': 'translate(0,0)',
+			'transition': 'transform .5s ease-in-out'
+		},
+		animationHide: {
+			'transform': 'translate(100px,0)',
+			'transition': 'transform .5s ease-in-out'
+		}
+	} );
+</script>
+
+
+<!-- Baidu Analytics -->
+<script defer>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a6f6eeb856f1ce7dc2c8c445119187de";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+    <!-- Gitalk -->
+    <script>
+        const data = '{"clientID":"02b3c","clientSecret":"adfc7b4","repo":"gimment","owner":"duneng","admin":"duneng"}'
+        const gitalk = new Gitalk({
+            ...JSON.parse( data),
+            id:location.pathname,
+            distractionFreeMode:false
+        })
+        
+        if(Boolean('false')){
+            gitalk.render('gitalk-container')
+        }
+    </script>
+
+
+	</body>
+</html>
+
