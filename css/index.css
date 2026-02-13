@@ -1058,7 +1058,7 @@ hue-6-2: #e6c07b
   padding: 64px 80px;
   font-size: 18px;
   justify-content: flex-start;
-  gap: 100px;
+  gap: 50px;
   flex-wrap: wrap;
   transition: all 0.4s ease-in-out;
 }
